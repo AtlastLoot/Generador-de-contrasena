@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Generador de contraseñas</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="container__contenido">
+        <div class="container__informacion">
+          <div class="container__texto">
+            <h1>
+              Generador<span class="container__texto-azul">
+                de Contraseñas</span
+              >
+            </h1>
+            <div class="container__campo">
+              <label class="texto__parrafo"
+                >Cantidad
+                <input class="container__input" type="number" id="cantidad" />
+              </label>
+              <button class="boton" id="generar" onclick="btnGenerar()">
+                Generar
+              </button>
+              <button class="boton" id="generar" onclick="limpiar()">
+                Limpiar
+              </button>
+            </div>
+            <div class="container__campo">
+              <div class="container__salida">
+                <div>
+                  <input
+                    class="container__contrasena"
+                    type="text"
+                    id="contrasena"
+                    placeholder="contraseña"
+                  />
+                  <p class="alert_contrasena"></p>
+                </div>
+                <div>
+                    <button class="boton" id="generar" onclick="btnCopiar()">Copiar </button>
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
